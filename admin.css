@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: pink;
+}
+
+.admin-login {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.admin-login input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.admin-login button {
+    padding: 10px 20px;
+}
+
+.admin-panel {
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: yellow;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.panel-section {
+    display: none;
+}

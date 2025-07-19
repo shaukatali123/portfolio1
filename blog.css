@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: skyblue;
+    padding: 20px;
+}
+
+.module {
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.module img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.module-content {
+    padding: 20px;
+}
+
+.module h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.short-info {
+    color: #444;
+}
+
+.toggle-label {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.more-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+    color: #333;
+}
+
+input[type="checkbox"]:checked~.more-info {
+    max-height: 300px;
+    padding-top: 10px;
+}
+
+.more-info ul {
+    padding-left: 20px;
+}
+
+.more-info ul li {
+    line-height: 1.6;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+    <div class="admin-login" id="loginForm">
+        <h2>Admin Login</h2>
+        <input type="text" id="adminUser" placeholder="Username" />
+        <input type="password" id="adminPass" placeholder="Password" />
+        <button onclick="adminLogin()">Login</button>
+        <p id="loginError"></p>
+
+    </div>
+    <div class="admin-panel" id="adminPanel" style="display: none;">
+        <nav>
+            <h3>Admin Dashboard</h3>
+            <ul>
+                <li onclick="showSection('dashboard')">Dashboard</li>
+                <li onclick="showSection('messages')">Messages</li>
+                <li onclick="logout()">Logout</li>
+
+    </div>
+    </ul>
+    </nav>
+    <main>
+
+        <section id="dashboard" class="panel-section">Welcome,shaukat Ali!</section>
+        <section id="messages" class="panel-section" style="display: none;">
+            <h4>Contact Messages</h4>
+            <div id="messageList"></div>
+        </section>
+    </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
